@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #222;
+      text-align: center;
+    }
+
+    header {
+      background-color: #001f3f;
+      color: gold;
+      text-align: center;
+      padding: 30px 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: black;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: gold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border: 2px solid #001f3f;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #001f3f;
+      margin-top: 0;
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2.5em;
+      letter-spacing: 1.5px;
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .product-card {
+      border: 2px solid #001f3f;
+      border-radius: 12px;
+      width: 300px;
+      padding: 20px;
+      background: #fafafa;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 3px solid gold;
+    }
+
+    .product-card h3 {
+      color: #001f3f;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+    }
+
+    .product-card p.description {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 15px;
+      min-height: 60px;
+      line-height: 1.4;
+    }
+
+    .product-card ul {
+      text-align: left;
+      margin-bottom: 15px;
+      padding-left: 20px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #b8860b; /* dark gold */
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .btn-buy {
+      background-color: #001f3f;
+      color: gold;
+      padding: 12px 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+
+    .btn-buy:hover {
+      background-color: #b8860b;
+      color: #001f3f;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+    .im img{
+       border-radius:50%;
+       width:30%;
+       height:auto; 
+    }
+  </style>
+</head>
+<body>
+<div class="im">
+    
+<img src="logo.jpg">
+</div>
+  <header>
+    <h1>BLESSED SHOE CRAFT MAKING</h1>
+    <p>“Understanding is my priority”</p>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="product.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Explore Our Exclusive Shoe Collection</h2>
+
+    <div class="product-list">
+      <div class="product-card">
+        <img src="7.jpg" alt="Elegant Leather Shoes" />
+        <h3>Elegant Leather Shoes</h3>
+        <p class="description">Handcrafted from premium full-grain leather, these shoes combine durability and style for the perfect formal wear.</p>
+        <ul>
+          <li>100% Genuine Leather</li>
+          <li>Comfort Cushioned Insole</li>
+          <li>Non-slip Sole</li>
+          <li>Available in Black, Brown, and Tan</li>
+        </ul>
+        <p class="price">15K</p>
+        <a href="https://wa.me/256779085850" target="_blank">
+        <button class="btn-buy">Buy Now</button>
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <img src="2.jpg" alt="Classic Sandals" />
+        <h3>Classic Sandals</h3>
+        <p class="description">Crafted with natural materials, these lightweight sandals offer breathability and comfort for warm weather.</p>
+        <ul>
+          <li>Natural Leather Straps</li>
+          <li>Ergonomic Footbed</li>
+          <li>Flexible Sole</li>
+          <li>Available in Multiple Sizes</li>
+        </ul>
+        <p class="price">10K</p>
+        <button class="btn-buy">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 BLESSED SHOE CRAFT MAKING COMPANY | All rights reserved.
+  </footer>
+
+</body>
+</html>
